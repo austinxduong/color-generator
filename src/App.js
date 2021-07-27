@@ -46,6 +46,8 @@ export default class Color extends Component  {
               style={{
                 backgroundColor: this.state.bgColor
               }}
+              onMouseMove={this.MouseHover}
+              className="App"
             />
           </div>
         </>
