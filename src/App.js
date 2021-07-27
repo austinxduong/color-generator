@@ -7,7 +7,9 @@ import copy from 'clipboard-copy';
 
 import './styles.css';
 
-export default class Color extends Component  {
+// const color = randomColor();
+
+export default class Color extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,11 +18,11 @@ export default class Color extends Component  {
     };
   }
 
-    clickHandler=(event) => {
-      copy(this.state.bgColor);
+  clickHandler=(event) => {
+    copy(this.state.bgColor);
 
-      this.setState({ display:true });
-    }
+    this.setState({ display:true });
+  }
 
     clickHideHandler=(event) => {
       this.setState({ display:false });
